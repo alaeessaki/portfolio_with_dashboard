@@ -1,0 +1,745 @@
+@media screen and (max-width: 1035px) {
+  body .cards-container .single-row .single-sec .tl-spec {
+    margin-top: 13% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body header .navbar span {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body header .navbar span {
+    display: block;
+  }
+
+  body header .navbar .plash {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .cards-container .single-row .single-sec .tl-spec {
+    margin-top: 136px !important;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body .cards-container .single-row .single-sec .p-spec {
+    width: 38%;
+  }
+
+  body header .first-section .pres h4 {
+    font-size: 18px;
+  }
+
+  body .cards-container .single-row .single-sec .left,
+  body .cards-container .single-row .single-sec .right {
+    font-size: 13px;
+    width: 38%;
+  }
+
+  body .recent-work .single-row .work-cont {
+    padding: 10px 20px;
+  }
+
+  body .decription-section .single-row {
+    padding: 77px 43px;
+  }
+}
+
+/* Small Mobile */
+
+@media screen and (max-width: 321px) {
+  body .cards-container .single-row .single-sec .tl-spec {
+    margin-top: 222px !important;
+  }
+
+  body .cards-container .single-row .single-sec .title-left {
+    margin-top: 41px;
+  }
+
+  body .cards-container .single-row .single-sec .t-spec {
+    margin-top: 13%;
+  }
+
+  body header .first-section .pres h4 {
+    font-size: 12px;
+  }
+
+  body header .first-section .pres div a {
+    font-size: 11px;
+  }
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url("../assets/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato Medium";
+  src: url("../assets/fonts/Lato-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Pattaya";
+  src: url("../assets/fonts/Pattaya-Regular.ttf");
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+a::selection,
+p::selection,
+br::selection,
+li::selection {
+  background-color: black;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body header {
+  position: relative;
+}
+
+body header .navbar {
+  position: absolute;
+  z-index: 600;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 !important;
+}
+
+body header .navbar .navbar-brand {
+  position: absolute;
+  z-index: 400;
+  left: 0;
+  top: 0;
+  font-family: "Pattaya";
+  font-size: 34px;
+  color: white;
+  margin-left: 80px;
+  font-weight: 600;
+  padding-top: 0 !important;
+}
+
+body header .navbar span {
+  position: absolute;
+  right: 35px;
+  top: 20px;
+}
+
+body header .navbar span i {
+  font-size: 22px;
+}
+
+body header .navbar .li-closed {
+  display: block;
+}
+
+body header .navbar .li-clicked {
+  display: none;
+}
+
+body header .navbar .navbar-collapse .navbar-nav {
+  margin-right: 50px !important;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: "Lato light" !important;
+  font-weight: 600 !important;
+  color: black;
+  position: relative;
+  padding-top: 15px;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .hov::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 5px;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .hov:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .spec {
+  color: white;
+  background-color: black;
+  margin-top: 0px;
+  padding: 6px 20px;
+  padding-top: 15px !important;
+}
+
+body header .navbar .menutoggled {
+  right: 0 !important;
+  transition: right 0.5s;
+}
+
+body header .navbar .menuclosed {
+  right: -20rem !important;
+  transition: right 0.5s;
+}
+
+body header .navbar .plash {
+  display: none;
+  height: 267vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -60000;
+  right: 200px;
+}
+
+body header .navbar #togglemenu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 500;
+  right: -20rem;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+}
+
+body header .navbar #togglemenu .container {
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+}
+
+body header .navbar #togglemenu .container ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body header .navbar #togglemenu .container ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 18px 30px;
+}
+
+body header .navbar #togglemenu .container ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+body header .first-section {
+  position: relative;
+}
+
+body header .first-section .hero {
+  flex: 1;
+  background-image: url("../assets/imgs/books.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+
+body header .first-section .pres {
+  flex: 1;
+}
+
+body header .first-section .pres h4 {
+  margin-top: 30%;
+  text-align: center;
+  font-family: "Lato Light";
+  font-weight: 600;
+  line-height: 55px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+body header .first-section .pres div a {
+  position: relative;
+  z-index: 4000;
+  text-decoration: none;
+  font-family: "Lato Light";
+  font-weight: 600;
+  border: 2px solid black;
+  padding: 5px 18px !important;
+  margin-top: 35px;
+  margin-right: 20px;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+body header .first-section .pres div a:hover {
+  background-color: black;
+  color: white;
+}
+
+body header .right-brand {
+  position: absolute;
+  right: 10px;
+  bottom: 11%;
+}
+
+body header .right-brand p {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -45px;
+  bottom: 684%;
+  font-size: 14px;
+  width: 121px;
+}
+
+body header .right-brand p::before {
+  content: "";
+  position: absolute;
+  width: 2%;
+  height: 50px;
+  bottom: 5px;
+  left: 0;
+}
+
+body header .right-brand hr {
+  position: absolute;
+  right: -35px;
+  bottom: 77px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background-color: black;
+  height: 1px;
+  width: 100px;
+}
+
+body header .right-brand img {
+  width: 30px;
+  height: 30px;
+}
+
+body header .dropleft {
+  font-family: "Lato Medium";
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 10;
+  border: 1px solid black;
+  border-radius: unset;
+}
+
+body header .dropleft button {
+  border: 1px solid black;
+  border-radius: unset;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+}
+
+body header .dropleft button:hover {
+  background-color: white;
+  color: black;
+}
+
+body header .dropleft .dropdown-menu {
+  transform: translate3d(-163px, -36px, 0px) !important;
+  border: 1px solid black;
+  border-radius: unset;
+}
+
+body header .dropleft .dropdown-menu form a {
+  font-size: 12px;
+}
+
+body header .dropleft .dropdown-menu form a:hover {
+  background-color: unset;
+}
+
+body .decription-section {
+  margin-bottom: 70px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Lato Light";
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+body .decription-section .single-row {
+  padding: 60px 100px;
+}
+
+body .decription-section .single-row h4 {
+  font-family: "Lato Medium" !important;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+body .decription-section .single-row p {
+  margin-bottom: 40px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+body .decription-section .single-row a {
+  color: white;
+  text-decoration: none;
+  float: right;
+  border: 2px solid white;
+  padding: 3px 25px;
+}
+
+body .decription-section .single-row a:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+body .cards-container .single-row {
+  position: relative;
+}
+
+body .cards-container .single-row .single-sec {
+  position: relative;
+  height: 49vh;
+  font-family: "Lato Light";
+}
+
+body .cards-container .single-row .single-sec h3 {
+  margin-bottom: 8.5rem;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+body .cards-container .single-row .single-sec .t-spec {
+  margin-bottom: 175px;
+  margin-top: 1%;
+}
+
+body .cards-container .single-row .single-sec .tl-spec {
+  margin-top: 134px !important;
+  margin-right: 12% !important;
+}
+
+body .cards-container .single-row .single-sec .title-right {
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+body .cards-container .single-row .single-sec .title-left {
+  margin-right: 5%;
+  margin-top: 20px;
+}
+
+body .cards-container .single-row .single-sec hr {
+  margin-top: 63px;
+  margin-bottom: 0 !important;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background-color: black;
+  height: 1px;
+  width: 217px;
+}
+
+body .cards-container .single-row .single-sec .hrspec {
+  width: 311px;
+}
+
+body .cards-container .single-row .single-sec p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 219px;
+  position: absolute;
+  top: 17%;
+}
+
+body .cards-container .single-row .single-sec .p-spec {
+  top: 17%;
+}
+
+body .cards-container .single-row .single-sec .right {
+  left: 53%;
+}
+
+body .cards-container .single-row .single-sec .left {
+  right: 53%;
+}
+
+body .recent-work {
+  margin-top: 10rem !important;
+}
+
+body .recent-work .single-row .work-cont {
+  padding: 10px 7px;
+}
+
+body .recent-work .single-row .work-cont .card {
+  border: 0 !important;
+  border-radius: 0 !important;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+body .recent-work .single-row .work-cont .card:hover .vplus {
+  display: unset;
+}
+
+body .recent-work .single-row .work-cont .card:hover img {
+  -webkit-filter: brightness(60%);
+  /* Safari 6.0 - 9.0 */
+  filter: brightness(30%);
+  transition: filter 0.16s;
+}
+
+body .recent-work .single-row .work-cont .card img {
+  border: 0 !important;
+  border-radius: 0 !important;
+  cursor: pointer;
+}
+
+body .recent-work .single-row .work-cont .card .vplus {
+  color: white;
+  font-weight: 600;
+  top: 30%;
+  left: 38%;
+  display: none;
+  cursor: pointer;
+}
+
+body .recent-work .single-row .work-cont .card a {
+  background-color: black;
+  font-family: "Lato Medium";
+  color: white;
+  border: 1px solid black;
+}
+
+body .recent-work .single-row .work-cont .card a:hover {
+  background-color: white;
+  color: black;
+}
+
+body .recent-work .single-row .modal-dialog {
+  border: 1px solid black;
+}
+
+body .recent-work .single-row .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+body .recent-work .single-row .modal-dialog .modal-content .modal-body img {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  width: 100%;
+}
+
+body .recent-work .single-row .modal-dialog .modal-content .modal-footer button {
+  border: none !important;
+  border-radius: none !important;
+  background-color: #3d3d3d !important;
+  color: white;
+}
+
+body .recent-work .single-row .modal-dialog .modal-content .modal-footer a button {
+  border: none !important;
+  border-radius: none !important;
+  background-color: black !important;
+  color: white;
+}
+
+body .recent-work .single-row .af-suite a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+body .what-i-can-do-sec {
+  margin-top: 6rem;
+  background-color: black;
+  background-size: cover;
+}
+
+body .what-i-can-do-sec .single-row {
+  color: white;
+}
+
+body .what-i-can-do-sec .single-row .red-sec h5 {
+  font-family: "Lato Medium";
+}
+
+body .what-i-can-do-sec .single-row .red-sec ul {
+  line-height: 40px;
+}
+
+body .what-i-can-do-sec .single-row .red-sec ul li {
+  font-weight: bold;
+  font-family: "Lato Medium";
+  margin-bottom: 20px;
+}
+
+body .what-i-can-do-sec .single-row .red-sec ul li::selection {
+  background-color: white !important;
+  color: black !important;
+}
+
+body .what-i-can-do-sec .single-row .red-sec .button a {
+  text-decoration: none;
+  font-family: "Lato Medium";
+  border: 2px solid white;
+  padding: 5px 18px !important;
+  margin-top: 35px;
+  margin-right: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  float: right;
+}
+
+body .what-i-can-do-sec .single-row .red-sec .button a:hover {
+  background-color: white;
+  color: black;
+}
+
+body footer {
+  background-color: black;
+}
+
+body footer .single-row {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+body footer .single-row .logo a {
+  font-family: "Pattaya";
+  font-size: 34px;
+  color: white;
+  text-decoration: none !important;
+}
+
+body footer .single-row .redaction {
+  color: white;
+  font-family: "Lato Medium";
+}
+
+body footer .single-row .redaction p::selection {
+  background-color: white !important;
+  color: black !important;
+}
+
+body footer .single-row .barcode {
+  width: 10%;
+}
+
+body footer .single-row .barcode img {
+  width: 100%;
+}
+
+body footer .single-row .reseaux a {
+  color: white;
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+body footer .single-row .copyrights {
+  color: white;
+}
+
+body footer .single-row .copyrights a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  color: black;
+  background-color: white;
+  border-color: black;
+}

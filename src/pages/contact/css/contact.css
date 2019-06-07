@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Lato Light";
+  src: url("../../../assets/fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: "Lato Medium";
+  src: url("../../../assets/fonts/Lato-Medium.ttf"); }
+
+@font-face {
+  font-family: "Pattaya";
+  src: url("../../../assets/fonts/Pattaya-Regular.ttf"); }
+
+body header {
+  margin-bottom: 8rem !important; }
+  body header .navbar {
+    position: absolute;
+    z-index: 600;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0 !important; }
+    body header .navbar .navbar-brand {
+      position: absolute;
+      z-index: 400;
+      left: 0;
+      top: 0;
+      font-family: "Pattaya";
+      font-size: 34px;
+      color: black;
+      margin-left: 80px;
+      font-weight: 600;
+      padding-top: 0 !important; }
+    body header .navbar span {
+      position: absolute;
+      right: 35px;
+      top: 20px; }
+      body header .navbar span i {
+        font-size: 22px; }
+    body header .navbar .li-closed {
+      display: block; }
+    body header .navbar .li-clicked {
+      display: none; }
+    body header .navbar .navbar-collapse .navbar-nav {
+      margin-right: 50px !important; }
+      body header .navbar .navbar-collapse .navbar-nav .nav-item {
+        text-transform: uppercase;
+        font-size: 14px; }
+        body header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+          font-family: "Lato light" !important;
+          font-weight: 600 !important;
+          color: black;
+          position: relative;
+          padding-top: 15px; }
+        body header .navbar .navbar-collapse .navbar-nav .nav-item .hov::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 5px;
+          left: 0;
+          background-color: black;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.2s ease-in-out 0s; }
+        body header .navbar .navbar-collapse .navbar-nav .nav-item .hov:hover::before {
+          visibility: visible;
+          transform: scaleX(1); }
+        body header .navbar .navbar-collapse .navbar-nav .nav-item .spec {
+          color: white;
+          background-color: black;
+          margin-top: 0px;
+          padding: 6px 20px;
+          padding-top: 15px !important; }
+    body header .navbar .menutoggled {
+      right: 0 !important;
+      transition: right 0.5s; }
+    body header .navbar .menuclosed {
+      right: -20rem !important;
+      transition: right 0.5s; }
+    body header .navbar .plash {
+      display: none;
+      height: 267vh;
+      width: 100vw;
+      position: absolute;
+      z-index: -6000;
+      right: 200px; }
+    body header .navbar #togglemenu {
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      z-index: 800;
+      right: -20rem;
+      top: 0;
+      width: 200px;
+      height: 100vh; }
+      body header .navbar #togglemenu .container {
+        padding: 0;
+        background-color: black;
+        height: 100vh; }
+        body header .navbar #togglemenu .container ul {
+          padding-left: 0;
+          list-style-type: none; }
+          body header .navbar #togglemenu .container ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 18px 30px; }
+            body header .navbar #togglemenu .container ul li a:hover {
+              color: black;
+              background-color: white; }
+
+body main {
+  position: relative;
+  transition: z-index 0.5s;
+  border: 3px solid black;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 100px;
+  margin-bottom: 40px; }
+  body main .contact-cont {
+    margin-top: 7%;
+    width: 100%;
+    padding-bottom: 2.5rem; }
+    body main .contact-cont .title {
+      border-bottom: 3px solid black; }
+      body main .contact-cont .title h1 {
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-align: center; }
+    body main .contact-cont form {
+      width: 70%; }
+      body main .contact-cont form .form-group .title2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600; }
+      body main .contact-cont form .form-group .input-group input {
+        border: 1px solid black; }
+        body main .contact-cont form .form-group .input-group input:focus {
+          box-shadow: 0px 1px 1px black inset, 0px 0px 8px #3d3d3d; }
+      body main .contact-cont form .form-group .input-group .input-group-prepend span {
+        border: 1px solid black;
+        background-color: black; }
+        body main .contact-cont form .form-group .input-group .input-group-prepend span i {
+          color: white; }
+      body main .contact-cont form .form-group .input-group textarea {
+        border: 1px solid black; }
+        body main .contact-cont form .form-group .input-group textarea:focus {
+          box-shadow: 0px 1px 1px black inset, 0px 0px 8px black; }
+      body main .contact-cont form .form-group .input-group-spec input {
+        background-color: #3d3d3d;
+        color: white;
+        border: 1px solid black; }
+      body main .contact-cont form .form-group .input-group-spec .input-group-prepend span a {
+        text-decoration: none;
+        color: white; }
+        body main .contact-cont form .form-group .input-group-spec .input-group-prepend span a:hover {
+          cursor: pointer; }
+      body main .contact-cont form button {
+        background-color: black;
+        color: white; }
+        body main .contact-cont form button:hover {
+          color: white; }
+  body main .dropleft {
+    font-family: "Lato Medium";
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 10;
+    border: 1px solid black;
+    border-radius: unset; }
+    body main .dropleft button {
+      border: 1px solid black;
+      border-radius: unset;
+      background-color: white;
+      color: black;
+      font-size: 12px; }
+      body main .dropleft button:hover {
+        background-color: white;
+        color: black; }
+    body main .dropleft .dropdown-menu {
+      transform: translate3d(-163px, -36px, 0px) !important;
+      border: 1px solid black;
+      border-radius: unset; }
+      body main .dropleft .dropdown-menu form a {
+        font-size: 12px; }
+        body main .dropleft .dropdown-menu form a:hover {
+          background-color: unset; }
+
+body footer {
+  margin-top: 9rem;
+  background-color: black; }
+  body footer .single-row {
+    padding-top: 2rem;
+    padding-bottom: 1rem; }
+    body footer .single-row .logo a {
+      font-family: "Pattaya";
+      font-size: 34px;
+      color: white;
+      text-decoration: none !important; }
+    body footer .single-row .redaction {
+      color: white;
+      font-family: "Lato Medium"; }
+    body footer .single-row .reseaux a {
+      color: white;
+      font-size: 24px;
+      margin: 0px 10px; }
+    body footer .single-row .barcode {
+      width: 10%; }
+      body footer .single-row .barcode img {
+        width: 100%; }
+    body footer .single-row .copyrights {
+      color: white; }
+      body footer .single-row .copyrights a {
+        text-decoration: none;
+        color: white; }
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  color: black;
+  background-color: white;
+  border-color: black; }

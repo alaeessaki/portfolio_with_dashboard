@@ -1,0 +1,27 @@
+html,body{
+    background-image: url('../../asseets/imgs/img.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .container{
+        width:100%;
+        height: 100%;
+    
+    .form-group{
+        label{
+            color:white;
+        }
+        small{
+            color: red !important;
+        }
+    }
+    .button{
+        button{
+            background-color: black;
+            color:white;
+            border:unset;
+        }
+    }
+
+    }
+}

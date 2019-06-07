@@ -1,0 +1,10 @@
+@media screen and (min-width: 992px) {
+    body header .navbar span {
+        display:none !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    body header .navbar span {
+        display: block;
+    }
+}

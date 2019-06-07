@@ -1,0 +1,354 @@
+@media screen and (max-width: 992px) {
+  body header .navbar span {
+    display: block !important;
+  }
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url("../../../assets/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato Medium";
+  src: url("../../../assets/fonts/Lato-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Pattaya";
+  src: url("../../../assets/fonts/Pattaya-Regular.ttf");
+}
+
+body main .projects-section #all,
+body main .projects-section #website,
+body main .projects-section #mobileapp,
+body main .projects-section #webapp,
+body main .projects-section #game,
+body main .projects-section #others {
+  margin-top: 6rem;
+}
+
+body main .projects-section #all .project-container .card,
+body main .projects-section #website .project-container .card,
+body main .projects-section #mobileapp .project-container .card,
+body main .projects-section #webapp .project-container .card,
+body main .projects-section #game .project-container .card,
+body main .projects-section #others .project-container .card {
+  position: relative;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 8rem !important;
+}
+
+body main .projects-section #all .project-container .card:hover .name,
+body main .projects-section #website .project-container .card:hover .name,
+body main .projects-section #mobileapp .project-container .card:hover .name,
+body main .projects-section #webapp .project-container .card:hover .name,
+body main .projects-section #game .project-container .card:hover .name,
+body main .projects-section #others .project-container .card:hover .name {
+  transform: translateY(-10%);
+  transition: transform .2s;
+}
+
+body main .projects-section #all .project-container .card img,
+body main .projects-section #website .project-container .card img,
+body main .projects-section #mobileapp .project-container .card img,
+body main .projects-section #webapp .project-container .card img,
+body main .projects-section #game .project-container .card img,
+body main .projects-section #others .project-container .card img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+body main .projects-section #all .project-container .card .name,
+body main .projects-section #website .project-container .card .name,
+body main .projects-section #mobileapp .project-container .card .name,
+body main .projects-section #webapp .project-container .card .name,
+body main .projects-section #game .project-container .card .name,
+body main .projects-section #others .project-container .card .name {
+  padding: 2rem !important;
+  color: white;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  right: -7%;
+  bottom: -20%;
+  cursor: pointer;
+}
+
+body header {
+  margin-bottom: 8rem !important;
+}
+
+body header .navbar {
+  position: absolute;
+  z-index: 600;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 !important;
+}
+
+body header .navbar .navbar-brand {
+  position: absolute;
+  z-index: 400;
+  left: 0;
+  top: 0;
+  font-family: "Pattaya";
+  font-size: 34px;
+  color: black;
+  margin-left: 80px;
+  font-weight: 600;
+  padding-top: 0 !important;
+}
+
+body header .navbar span {
+  display: none !important;
+  position: absolute;
+  right: 35px;
+  top: 20px;
+}
+
+body header .navbar span i {
+  font-size: 22px;
+}
+
+body header .navbar .li-closed {
+  display: block;
+}
+
+body header .navbar .li-clicked {
+  display: none;
+}
+
+body header .navbar .navbar-collapse .navbar-nav {
+  margin-right: 50px !important;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: "Lato light" !important;
+  font-weight: 600 !important;
+  color: black;
+  position: relative;
+  padding-top: 15px;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .hov::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 5px;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .hov:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+body header .navbar .navbar-collapse .navbar-nav .nav-item .spec {
+  color: white;
+  background-color: black;
+  margin-top: 0px;
+  padding: 6px 20px;
+  padding-top: 15px !important;
+}
+
+body header .navbar .menutoggled {
+  right: 0 !important;
+  transition: right 0.5s;
+}
+
+body header .navbar .menuclosed {
+  right: -20rem !important;
+  transition: right 0.5s;
+}
+
+body header .navbar .plash {
+  height: 267vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -6000;
+  right: 200px;
+}
+
+body header .navbar #togglemenu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 800;
+  right: -20rem;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+}
+
+body header .navbar #togglemenu .container {
+  padding: 0;
+  background-color: black;
+  height: 100vh;
+}
+
+body header .navbar #togglemenu .container ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+body header .navbar #togglemenu .container ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 18px 30px;
+}
+
+body header .navbar #togglemenu .container ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+body main {
+  position: relative;
+  transition: z-index 0.5s;
+}
+
+body main .categories .navs-list .navs-item {
+  list-style-type: none;
+  font-family: "Lato","Lato Medium";
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  padding: 1px 12px;
+  border-radius: 11px;
+}
+
+body main .categories .navs-list .active {
+  color: white;
+  background-color: black;
+}
+
+body main .projects-section .non-active {
+  display: none;
+}
+
+body main .projects-section .modal-dialog {
+  border: 1px solid black;
+  z-index: 602 !important;
+}
+
+body main .projects-section .modal-dialog .modal-content .modal-header {
+  border: none;
+}
+
+body main .projects-section .modal-dialog .modal-content .modal-body img {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+  width: 100%;
+}
+
+body main .projects-section .modal-dialog .modal-content .modal-footer button {
+  border: none !important;
+  border-radius: none !important;
+  background-color: #3d3d3d !important;
+  color: white;
+}
+
+body main .projects-section .modal-dialog .modal-content .modal-footer a button {
+  background-color: black !important;
+  color: white;
+}
+
+body main .dropleft {
+  font-family: "Lato Medium";
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 10;
+  border: 1px solid black;
+  border-radius: unset;
+}
+
+body main .dropleft button {
+  border: 1px solid black;
+  border-radius: unset;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+}
+
+body main .dropleft button:hover {
+  background-color: white;
+  color: black;
+}
+
+body main .dropleft .dropdown-menu {
+  transform: translate3d(-163px, -36px, 0px) !important;
+  border: 1px solid black;
+  border-radius: unset;
+}
+
+body main .dropleft .dropdown-menu form a {
+  font-size: 12px;
+}
+
+body main .dropleft .dropdown-menu form a:hover {
+  background-color: unset;
+}
+
+body footer {
+  margin-top: 9rem;
+  background-color: black;
+}
+
+body footer .single-row {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+body footer .single-row .logo a {
+  font-family: "Pattaya";
+  font-size: 34px;
+  color: white;
+  text-decoration: none !important;
+}
+
+body footer .single-row .redaction {
+  color: white;
+  font-family: "Lato Medium";
+}
+
+body footer .single-row .barcode {
+  width: 10%;
+}
+
+body footer .single-row .barcode img {
+  width: 100%;
+}
+
+body footer .single-row .reseaux a {
+  color: white;
+  font-size: 24px;
+  margin: 0px 10px;
+}
+
+body footer .single-row .copyrights {
+  color: white;
+}
+
+body footer .single-row .copyrights a {
+  text-decoration: none;
+  color: white;
+}
+
+.modal-backdrop.show {
+  z-index: 7;
+}

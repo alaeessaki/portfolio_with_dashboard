@@ -1,0 +1,26 @@
+html, body {
+  background-image: url("../../asseets/imgs/img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+html .container, body .container {
+  width: 100%;
+  height: 100%;
+}
+
+html .container .form-group label, body .container .form-group label {
+  color: white;
+}
+
+html .container .form-group small, body .container .form-group small {
+  color: red !important;
+}
+
+html .container .button button, body .container .button button {
+  background-color: black;
+  color: white;
+  border: unset;
+}
+/*# sourceMappingURL=login.css.map */

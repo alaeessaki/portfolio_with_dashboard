@@ -1,0 +1,331 @@
+@font-face {
+    font-family: "Lato Light";
+    src: url("../../../assets/fonts/Lato-Light.ttf");
+};
+@font-face {
+    font-family: "Lato Medium";
+    src: url("../../../assets/fonts/Lato-Medium.ttf");
+};
+@font-face {
+    font-family: "Pattaya";
+    src: url("../../../assets/fonts/Pattaya-Regular.ttf");
+};
+
+
+$primary-color:black;
+$secondary-color:rgb(61, 61, 61);
+
+// Extend projects style
+%project{
+    margin-top: 6rem;
+    .project-container{
+        .card{
+            position: relative;
+            border:0 !important;
+            border-radius: 0 !important;
+            margin-bottom: 8rem !important;
+            &:hover{
+                .name{
+                    transform: translateY(-10%);
+                    transition: transform .2s;
+                }
+            }
+            img{
+                -webkit-filter:grayscale(100%);
+                filter: grayscale(100%);
+                cursor: pointer;
+            }
+            .name{
+                padding:2rem !important;
+                color:white;
+                background-color: $primary-color;
+                position: absolute;
+                left: 0;
+                right:-7%;
+                bottom: -20%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+body{
+    header{
+        margin-bottom: 8rem !important;
+        .navbar{
+            position: absolute;
+            z-index:600;
+            top:0;
+            right:0;
+            left:0;
+            padding: 0 !important;
+            .navbar-brand{
+                position: absolute;
+                z-index: 400;
+                left:0;
+                top:0;
+                font-family: "Pattaya";
+                font-size: 34px;
+                color:black;
+                margin-left: 80px;
+                font-weight: 600;
+                padding-top: 0 !important;
+            }
+            span{
+                position: absolute;
+                right:35px;
+                top:20px;
+                i{
+                    font-size: 22px;
+                }
+            }
+            .li-closed{
+                display:block;
+            }
+            .li-clicked{
+                display:none;
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    margin-right: 50px !important;
+                    .nav-item{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        .nav-link{
+                            font-family: "Lato light" !important;
+                            font-weight: 600 !important;
+                            color:black;
+                            position: relative;
+                            padding-top: 15px;
+                        }
+                        .hov{
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 1px;
+                                bottom: 5px;
+                                left: 0;
+                                background-color: $primary-color;
+                                visibility: hidden;
+                                transform: scaleX(0);
+                                transition: all 0.2s ease-in-out 0s;
+                              }
+                              &:hover::before{
+                                visibility: visible;
+                                transform: scaleX(1);
+                              }
+                        }
+                        .spec{
+                            color:white;
+                            background-color:$primary-color;
+                            margin-top:0px;
+                            padding: 6px 20px; 
+                            padding-top: 15px !important;
+                        }
+                    }
+                }
+            }
+            .menutoggled{
+                right:0 !important;
+                transition: right 0.5s;
+            }
+            .menuclosed{
+                right:-20rem !important;
+                transition: right 0.5s;
+            }
+            .plash{
+                display:none;
+                height: 267vh;
+                width: 100vw; 
+                position: absolute;
+                z-index:-6000;
+                right:200px;
+            }
+            #togglemenu{
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                z-index: 800;
+                right:-20rem;
+                top: 0;
+                width: 200px;
+                height:100vh;
+                .container{
+                    padding: 0;
+                    background-color:black;
+                    height:100vh;
+                    ul{
+                        padding-left:0; 
+                        list-style-type: none;
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                display: block;
+                                padding: 18px 30px;
+                                &:hover{
+                                    color:black;
+                                    background-color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    main{
+        position: relative;
+        transition: z-index 0.5s;
+        .categories{
+            .navs-list{
+                .navs-item{
+                    list-style-type: none;
+                    font-family: "Lato","Lato Medium";
+                    font-size: 14px;
+                    color: black;
+                    cursor: pointer;
+                    padding: 1px 12px;
+                    border-radius: 11px;
+                }
+                .active{
+                    color: white;
+                    background-color: $primary-color;
+                }
+            }
+        }
+        .projects-section{
+            .non-active{
+                display:none;
+            }
+            #all{
+               @extend %project;
+            }
+            #website{
+                @extend %project;  
+            }
+            #mobileapp{
+                @extend %project;
+            }
+            #webapp{
+                @extend %project;
+            }
+            #game{
+                @extend %project;
+            }
+            #others{
+                @extend %project;
+            }
+            .modal-dialog{
+                border:1px solid black;
+                z-index:602 !important;
+                .modal-content{
+                    .modal-header{
+                        border:none;
+                    }
+                    .modal-body{
+                        img{
+                            -webkit-filter:grayscale(80%);
+                            filter: grayscale(80%);
+                            width: 100%;
+                        }
+                    }
+                    .modal-footer{
+                        
+                        button{
+                            border:none !important;
+                            border-radius: none !important;
+                            background-color: $secondary-color !important;
+                            color:white;
+                        }
+                        a{
+                            button{
+                                background-color: $primary-color !important;
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dropleft{
+            font-family: "Lato Medium";
+            position: fixed;
+            right:15px;
+            bottom: 10px;
+            z-index: 10;
+            border: 1px solid black;
+            border-radius: unset;
+            button{
+                border: 1px solid black;
+                border-radius: unset;
+                background-color: white;
+                color: black;
+                font-size: 12px;
+                &:hover{
+                    background-color: white;
+                    color:black;
+                }
+            }
+            .dropdown-menu{
+                transform: translate3d(-163px, -36px, 0px) !important;
+                border: 1px solid black;
+                border-radius: unset;
+                form{
+                    a{
+                        font-size: 12px;
+                        &:hover{
+                            background-color: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 9rem;
+        background-color: $primary-color;
+        .single-row{
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+
+            .logo{
+                a{
+                    font-family: "Pattaya";
+                    font-size: 34px;
+                    color:white;
+                    text-decoration: none !important;
+                }
+            }
+            .redaction{
+                color: white;
+                font-family: "Lato Medium";
+            }
+            .barcode{
+                width:10%;
+                img{
+                    width:100%;
+                }
+            }
+            .reseaux{
+                a{
+                    color:white;
+                    font-size: 24px;
+                    margin: 0px 10px;
+                }
+            }
+            .copyrights{
+                color:white;
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+            }
+        }
+    }
+}
+.modal-backdrop.show {
+    z-index: 7;
+}
