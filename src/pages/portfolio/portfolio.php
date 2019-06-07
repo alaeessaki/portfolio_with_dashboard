@@ -97,7 +97,7 @@ if(isset($_GET['lang'])){
                 <div class="project-container d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-wrap justify-content-center align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start">
                     <?php foreach ($rows as $row) : ?>
                         <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 20rem;" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt="'<?= $row['name'] ?>">
                             <p class="m-0 name text-center" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $row['name'] ?></p>
                             </a>
                         </div>
@@ -116,7 +116,7 @@ if(isset($_GET['lang'])){
                 <div class="project-container d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-wrap justify-content-center  align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start">
                     <?php foreach ($rows as $row) : ?>
                         <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 20rem;" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt="'<?= $row['name'] ?>">
                             <p class="m-0 name text-center" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $row['name'] ?></p>
                             </a>
                         </div>
@@ -135,7 +135,7 @@ if(isset($_GET['lang'])){
                 <div class="project-container d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-wrap justify-content-center  align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start">
                     <?php foreach ($rows as $row) : ?>
                         <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 20rem;" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt="'<?= $row['name'] ?>">
                             <p class="m-0 name text-center" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $row['name'] ?></p>
                             </a>
                         </div>
@@ -154,7 +154,7 @@ if(isset($_GET['lang'])){
                 <div class="project-container d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-wrap justify-content-center  align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start">
                     <?php foreach ($rows as $row) : ?>
                         <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 20rem;" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt="'<?= $row['name'] ?>">
                             <p class="m-0 name text-center" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $row['name'] ?></p>
                             </a>
                         </div>
@@ -173,7 +173,7 @@ if(isset($_GET['lang'])){
                 <div class="project-container d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-wrap justify-content-center  align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start">
                     <?php foreach ($rows as $row) : ?>
                         <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 20rem;" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt="'<?= $row['name'] ?>">
                             <p class="m-0 name text-center" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $row['name'] ?></p>
                             </a>
                         </div>
@@ -192,7 +192,7 @@ if(isset($_GET['lang'])){
                 <div class="project-container d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-wrap justify-content-center  align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start">
                     <?php foreach ($rows as $row) : ?>
                         <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 20rem;" data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                            <img class="card-img-top" src="../../assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt="'<?= $row['name'] ?>">
                             <p class="m-0 name text-center" data-toggle="modal" data-target="#exampleModal" onclick="getprj('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $row['name'] ?></p>
                             </a>
                         </div>
@@ -212,7 +212,7 @@ if(isset($_GET['lang'])){
                         </div>
                         <div class="modal-body" id="body">
                             <h3 class="text-center mb-5" id="mtitle"></h3>
-                            <img class="mb-5" src="#" id="mimg">
+                            <img class="mb-5" src="#" id="mimg" alt="project-img">
                             <p class="mb-5" id="mdesc"></p>
                             <h5><?= $lang[$default_lang]['modal'][0] ?></h5>
                             <h6 id="mtech"></h6>
@@ -252,15 +252,15 @@ if(isset($_GET['lang'])){
                 <p class="text-center">email : alaeessaki@gmail.com<br>Num : +2126 93 43 80 16</p>
             </div>
             <div class="barcode">
-                <img src="../../assets/imgs/frame.png">
+                <img src="../../assets/imgs/frame.png" alt="barcode img">
             </div>
 
             <div class="reseaux d-flex flex-row flex-sm-wrap flex-md-wrap mt-4">
-                <a href="https://www.facebook.com/alae.essaki1"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/alaeessaki?tab=repositories"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/alae-essaki-15485016a/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/es_alae"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/alaeessaki/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/alae.essaki1" aria-label="facebook link"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/alaeessaki?tab=repositories" aria-label="github link"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/alae-essaki-15485016a/" aria-label="linkedin link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/es_alae" aria-label="twitter link"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/alaeessaki/" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
             </div>
 
             <!-- Copyright -->

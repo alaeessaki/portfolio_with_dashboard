@@ -106,15 +106,15 @@ if(isset($_GET['lang'])){
                 <p class="text-center">email : alaeessaki@gmail.com<br>Num : +2126 93 43 80 16</p>
             </div>
             <div class="barcode">
-                <img src="../../assets/imgs/frame.png">
+                <img src="../../assets/imgs/frame.png" alt='barcode img'>
             </div>
 
             <div class="reseaux d-flex flex-row flex-sm-wrap flex-md-wrap mt-4">
-                <a href="https://www.facebook.com/alae.essaki1"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/alaeessaki?tab=repositories"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/alae-essaki-15485016a/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/es_alae"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/alaeessaki/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/alae.essaki1" aria-label="facebook link"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/alaeessaki?tab=repositories" aria-label="github link"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/alae-essaki-15485016a/" aria-label="linkedin link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/es_alae" aria-label="twitter link"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/alaeessaki/" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
             </div>
 
             <!-- Copyright -->

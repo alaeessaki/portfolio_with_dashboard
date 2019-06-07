@@ -197,7 +197,7 @@ function images(done) {
                 progressive: true
             }),
             imagemin.optipng({
-                optimizationLevel: 5
+                optimizationLevel: 15
             }),
             imagemin.svgo({
                 plugins: [{

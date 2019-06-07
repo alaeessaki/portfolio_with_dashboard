@@ -117,7 +117,7 @@ if (isset($_GET['lang'])) {
         <div class="right-brand d-flex justify-content-center">
             <p>ALAE PORTFOLIO</p>
             <hr>
-            <img src="assets/imgs/mouse.png">
+            <img src="assets/imgs/mouse.png" alt="mouse img">
         </div>
         <!-- Default dropup button -->
         <div class="btn-group dropleft shadow-none" data-sal="slide-left" data-sal-delay="150" data-sal-easing="ease-out-bounce" data-sal-duration="800">
@@ -208,7 +208,7 @@ if (isset($_GET['lang'])) {
             <div class="work-cont d-flex justify-content-center flex-row flex-wrap position-relative">
                 <?php foreach ($rows as $row) : ?>
                     <div class="card mr-sm-0 mr-md-5 mr-lg-5 mr-xl-5 mb-5 position-relative" style="width: 18rem;" data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="800">
-                        <img class="card-img-top" src="assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getrow('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')">
+                        <img class="card-img-top" src="assets/imgs/<?= $row['image'] ?>" data-toggle="modal" data-target="#exampleModal" onclick="getrow('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')" alt='<?= $row['name'] ?>'>
                         <p class="vplus position-absolute" data-toggle="modal" data-target="#exampleModal" onclick="getrow('<?= $row['name'] ?>','<?= $row['image'] ?>','<?= $row['description'] ?>','<?= $row['technologies'] ?>','<?= $row['github'] ?>')"><?= $lang[$default_lang]['seemore'] ?></p>
                         <a class="text-decoration-none p-1 d-flex align-items-center justify-content-center" href="<?= $row['github'] ?>">
                             <p class="m-0">github source <i class="fab fa-github-square"></i> </p>
@@ -228,7 +228,7 @@ if (isset($_GET['lang'])) {
                         </div>
                         <div class="modal-body" id="body">
                             <h3 class="text-center mb-5" id="mtitle"></h3>
-                            <img class="mb-5" src="#" id="mimg">
+                            <img class="mb-5" src="#" id="mimg" alt="project-img">
                             <p class="mb-5" id="mdesc"></p>
                             <h5><?= $lang[$default_lang]['modal'][0] ?></h5>
                             <h6 id="mtech"></h6>
@@ -253,9 +253,9 @@ if (isset($_GET['lang'])) {
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body d-flex justify-content-center align-items-center flex-column" id="body">
+                        <div class="modal-body d-flex justify-content-center align-items-center flex-column" id="errorbody">
                             <h3 class="errortitle">Sorry but this project is not linked yet</h3>
-                            <img class="errorImg" src="assets/imgs/error.png" style="width:60%">
+                            <img class="errorImg" src="assets/imgs/error.png" style="width:60%" alt="error img">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border:none">Close</button>
@@ -302,15 +302,15 @@ if (isset($_GET['lang'])) {
             </div>
 
             <div class="barcode">
-                <img src="assets/imgs/frame.png">
+                <img src="assets/imgs/frame.png" alt="barcode img">
             </div>
 
             <div class="reseaux d-flex flex-row flex-sm-wrap flex-md-wrap mt-4">
-                <a href="https://www.facebook.com/alae.essaki1"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://github.com/alaeessaki?tab=repositories"><i class="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/alae-essaki-15485016a/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/es_alae"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/alaeessaki/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/alae.essaki1" aria-label="facebook link"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/alaeessaki?tab=repositories" aria-label="github link"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/alae-essaki-15485016a/" aria-label="linkedin link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/es_alae" aria-label="twitter link"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/alaeessaki/" aria-label="instagram link"><i class="fab fa-instagram"></i></a>
             </div>
             
             <!-- Copyright -->
