@@ -217,6 +217,7 @@ function images(done) {
 function watch(done) {
     //watching html and php
     gulp.watch('./src/*.php', copyHTML)
+    gulp.watch('./src/admin/**', copyadmin)
     gulp.watch('./src/pages/404/*.html', copy404)
     gulp.watch('./src/pages/about/*.php', copyabout)
     gulp.watch('./src/pages/contact/*.php', copycontact)

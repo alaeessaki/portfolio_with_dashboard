@@ -8,6 +8,12 @@ $descError = "";
 $techError = "";
 $catError = "";
 $gitError = "";
+$id = (int)$_GET['id'];
+$db = Database::connect();
+$sql2 = "SELECT * FROM projects WHERE id=$id";
+$stmt2= $db->query($sql2);
+$project = $stmt2->fetch(PDO::FETCH_ASSOC);
+Database::disconnect();
 
 if(isset($_POST['submit'])){
   $filename = $_POST['filename'];
@@ -27,18 +33,20 @@ if(isset($_POST['submit'])){
       move_uploaded_file($tmp_name, "../../../../assets/imgs/$filephtoname");
   }
   $db = Database::connect();
-  $sql = "INSERT INTO projects VALUES(NULL,?,?,?,?,?,?,?)";
+  $sql = "UPDATE projects set name=:n, image=:i, description=:d, technologies=:t, categorie=:c, github=:g, favorite=:f WHERE id=$id";
+
   $stmt = $db->prepare($sql);
-  $stmt->bindValue(1,$filename,PDO::PARAM_STR);
-  $stmt->bindValue(2,$filephtoname,PDO::PARAM_STR);
-  $stmt->bindValue(3,$filedesc,PDO::PARAM_STR);
-  $stmt->bindValue(4,$filetech,PDO::PARAM_STR);
-  $stmt->bindValue(5,$filecat,PDO::PARAM_STR);
-  $stmt->bindValue(6,$filelink,PDO::PARAM_STR);
-  $stmt->bindValue(7,$fileshow,PDO::PARAM_INT);
+  $stmt->bindValue('n',$filename,PDO::PARAM_STR);
+  $stmt->bindValue('i',$filephtoname,PDO::PARAM_STR);
+  $stmt->bindValue('d',$filedesc,PDO::PARAM_STR);
+  $stmt->bindValue('t',$filetech,PDO::PARAM_STR);
+  $stmt->bindValue('c',$filecat,PDO::PARAM_STR);
+  $stmt->bindValue('g',$filelink,PDO::PARAM_STR);
+  $stmt->bindValue('f',$fileshow,PDO::PARAM_INT);
 
   $stmt->execute();
-  header('location:addproject.php?projectadded');
+  $db = Database::disconnect();
+  
 }
 
 ?>
@@ -64,7 +72,7 @@ if(isset($_POST['submit'])){
 
   <!-- Custom styles for this template-->
   <link href="../../../css/dashboard/sb-admin.css" rel="stylesheet">
-  <link href="css/add.css" rel="stylesheet">
+  <link href="../add/css/add.css" rel="stylesheet">
 
 </head>
 
@@ -140,17 +148,17 @@ if(isset($_POST['submit'])){
     <form action="" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="exampleInputEmail1">Project Name</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Project name" name="filename">
+        <input type="text" class="form-control" id="exampleInputEmail1" value="<?=$project['name']?>" name="filename">
         <small id="emailHelp" class="form-text text-muted"><?= $projectError ?></small>
       </div>
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Description</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="filedesc"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="filedesc" value="<?=$project['description']?>"></textarea>
         <small id="emailHelp" class="form-text text-muted"><?= $descError ?></small>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">technologies</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter technologies" name="filetech">
+        <input type="text" class="form-control" id="exampleInputEmail1" value="<?=$project['technologies']?>" name="filetech">
         <small id="emailHelp" class="form-text text-muted">Enter technologies seperated with /</small>
         <small id="emailHelp" class="form-text text-muted"><?= $techError ?></small>
       </div>
@@ -178,7 +186,7 @@ if(isset($_POST['submit'])){
       <small id="emailHelp" class="form-text text-muted"><?= $catError ?></small><br>
       <div class="form-group">
         <label for="exampleInputEmail1">Github link</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Project name" name="filelink">
+        <input type="text" class="form-control" id="exampleInputEmail1" value="<?=$project['github']?>" name="filelink">
         <small id="emailHelp" class="form-text text-muted"><?= $gitError ?></small>
       </div>
       <div class="form-check form-check-inline">
