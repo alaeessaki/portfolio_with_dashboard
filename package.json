@@ -19,7 +19,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-uglify-es": "^1.0.4",
     "gulp-uglify-js": "0.0.4",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "gulp-uglifycss": "^1.1.0",
